@@ -29,7 +29,9 @@ GET /api/post/:slug
 ```
 GET /api/posts
 ```
-there is also an optional filter by which you can search blogposts - tag. If you want to do that you should run:
+This will reproduce a list of blog posts, and a post count value.
+
+There is also an optional filter by which you can search blogposts - tag. If you want to do that you should run:
 ```
 GET /api/post?=tagName
 ```
@@ -60,16 +62,16 @@ DELETE /api/post/:slug
 GET /api/tags
 ```
 
-**Note:** Notice that single posts are called by api/post, and multiple posts are called by api/posts. You can use **Swagger** to test all of these calls.
+**Note:** Notice that single posts are called by api/post, and multiple posts are called by api/post**s**. You can use **Swagger** to test all of these calls.
 
 
 
 
 ### Additional functionalities
 
-When the user is creating the blog post, the tag list for that post is optional. When the user enters the values, if it's not existant in the database, it will add it then. If user nothing, this will be skipped.
+When user is creating the blog post, the tag list for that post is optional. When user enters tags, if they're not existant in the database, they will be added then. If user enters nothing, this will be skipped.
 
-For creating slugs, there is a custom made generator. If there are two same slugs, there will be added an index number on the end of the slug.
+For creating slugs, there is a custom made generator. If there are two same slugs, an index number at the end of the slug will be added.
 
 Example:
 
@@ -77,8 +79,12 @@ Example:
 augmented-reality-ios-application-3
 ```
 
-### Other
+### About model
 
 The relationship between BlogPost and TagList is a many-to-many relationship, which is why there is a third class called BlogsTags that connects them into that relationship.
+
+
+
+
 
 
