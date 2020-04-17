@@ -10,17 +10,14 @@ A backend soultion for a simple blogging platform that uses custom REST API for 
 
 * BloggingApp.bak is the database backup in case you wanna install it like that.
 
-Scaffolding the database:
-
-
 
 ### Prerequisites
 
 You will need:
 
-Microsoft SQL Server Management Studio 2019.
+Microsoft SQL Server Management Studio 2019 to run the scripts.
 
-Visual Studio 2019.
+Visual Studio 2019 to run the application.
 
 ## Running the tests
 
@@ -105,8 +102,8 @@ The relationship between BlogPost and TagList is a many-to-many relationship, wh
   - https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.SqlServer/3.1.3?_src=template
   - https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Tools/3.1.3?_src=template
 
-Other:
-* https://www.nuget.org/packages/Microsoft.VisualStudio.Web.CodeGeneration.Design/3.1.2?_src=template
+* Other:
+  - https://www.nuget.org/packages/Microsoft.VisualStudio.Web.CodeGeneration.Design/3.1.2?_src=template
 
 
 
