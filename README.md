@@ -47,7 +47,7 @@ Optional fields: tagList as an array of strings.
 
 * For updating a blog post by it's slug you should run:
 ```
-PUT /api/posts/:slug
+PUT /api/post/:slug
 ```
 Optional fields: title, description, body
 
